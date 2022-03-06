@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb on or off</title>
+</head>
+<body>
+    <button onclick="on()" id="btn" value="0">On</button>
+    
+    
+    <!--<p id="demo">Hello</p>-->
+    <img src="offbulb.jfif" id="image">
+    <script>
+        //var x=0;
+        function on()
+        {
+            if(document.getElementById('btn').value == 0)
+            {
+                document.getElementById('image').src = 'onbulb.jfif'
+                document.getElementById('btn').innerText = 'OFF';
+                document.getElementById('btn').value = 1;
+            }
+            else
+            {
+                document.getElementById('image').src = 'offbulb.jfif';
+                document.getElementById('btn').innerText = 'ON'
+                document.getElementById('btn').value = 0;
+            }
+        }
+    </script>
+</body>
+</html>
